@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SkyPath Flight Search</title>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      margin: 24px;
+    }
+    .row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: end;
+    }
+    label {
+      display: grid;
+      gap: 6px;
+      font-size: 14px;
+    }
+    input, button {
+      padding: 10px 12px;
+      font-size: 14px;
+    }
+    button {
+      cursor: pointer;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 14px;
+      margin-top: 14px;
+    }
+    .muted { color: #666; }
+    .err { color: #b00020; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+    th, td {
+      border-bottom: 1px solid #eee;
+      padding: 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>SkyPath Flight Search ✈️</h1>
+<p class="muted">
+  Simple search UI. Type 3-letter airport codes (e.g. JFK → LAX).
+</p>
+
+<div class="card">
+  <div class="row">
+    <label>
+      Origin
+      <input id="origin" placeholder="JFK" maxlength="3" />
+    </label>
+
+    <label>
+      Destination
+      <input id="destination" placeholder="LAX" maxlength="3" />
+    </label>
+
+    <label>
+      Date
+      <input id="date" type="date" />
+    </label>
+
+    <button id="btn">Search</button>
+  </div>
+
+  <div id="msg" class="err" style="margin-top:10px;"></div>
+</div>
+
+<div id="results"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
