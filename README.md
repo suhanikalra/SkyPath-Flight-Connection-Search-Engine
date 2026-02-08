@@ -1,22 +1,22 @@
-# SkyPath Flight Search (Submission-ready)
+# SkyPath Flight Search
 
-Spring Boot backend + simple frontend (served by Spring as static files).
+Spring Boot backend +  frontend (under resource folder).
 
 ## What this implements
 
-- ✅ One API: `POST /api/search` returns sorted itineraries
-- ✅ Direct, 1-stop, and 2-stop itineraries (max 3 legs)
-- ✅ Layover rules:
+-  One API: `POST /api/search` returns sorted itineraries
+-  Direct, 1-stop, and 2-stop itineraries (max 3 legs)
+- Layover rules:
   - Min layover **45 minutes** for domestic connections
   - Min layover **90 minutes** for international connections
   - Max layover **6 hours** for all connections
-- ✅ Airport-change rejection: a connection requires `arrivalAirport == nextDepartureAirport` exactly (no JFK→LGA)
-- ✅ Timezones handled correctly:
+-  Airport-change rejection: a connection requires `arrivalAirport == nextDepartureAirport` exactly (no JFK→LGA)
+-  Timezones handled correctly:
   - Input `date` is interpreted as **origin airport local date**
   - Flight local timestamps are converted to UTC using airport timezones
-- ✅ Dirty data handling:
+-  Dirty data handling:
   - Invalid airports, malformed timestamps, negative/invalid prices, or arrival before departure are **ignored silently**
-- ✅ Output is sorted by:
+-  Output is sorted by:
   1) `totalPrice` ascending  
   2) `totalDurationMinutes` ascending  
   3) fewer `stops`  
@@ -55,13 +55,3 @@ Body:
 Response:
 - `itineraries[]` with legs, UTC times and also `departureLocal` / `arrivalLocal` strings.
 
-## Data
-
-Data file: `backend/src/main/resources/data.json`
-
-You can replace it with your assignment dataset, keeping the structure:
-- `airports[]`: `{code, timezone, country,...}`
-- `flights[]`: `{id, origin, destination, departureLocal, arrivalLocal, price, currency}`
-
-Notes:
-- `departureLocal` / `arrivalLocal` are local datetime strings like `YYYY-MM-DDTHH:mm`.
