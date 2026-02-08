@@ -1,0 +1,247 @@
+{
+  "airports": [
+    {
+      "code": "JFK",
+      "name": "John F. Kennedy International",
+      "city": "New York",
+      "country": "US",
+      "timezone": "America/New_York"
+    },
+    {
+      "code": "LGA",
+      "name": "LaGuardia",
+      "city": "New York",
+      "country": "US",
+      "timezone": "America/New_York"
+    },
+    {
+      "code": "EWR",
+      "name": "Newark Liberty International",
+      "city": "Newark",
+      "country": "US",
+      "timezone": "America/New_York"
+    },
+    {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "US",
+      "timezone": "America/Chicago"
+    },
+    {
+      "code": "DFW",
+      "name": "Dallas/Fort Worth International",
+      "city": "Dallas",
+      "country": "US",
+      "timezone": "America/Chicago"
+    },
+    {
+      "code": "LAX",
+      "name": "Los Angeles International",
+      "city": "Los Angeles",
+      "country": "US",
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "code": "SFO",
+      "name": "San Francisco International",
+      "city": "San Francisco",
+      "country": "US",
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "code": "YYZ",
+      "name": "Toronto Pearson",
+      "city": "Toronto",
+      "country": "CA",
+      "timezone": "America/Toronto"
+    },
+    {
+      "code": "YVR",
+      "name": "Vancouver International",
+      "city": "Vancouver",
+      "country": "CA",
+      "timezone": "America/Vancouver"
+    },
+    {
+      "code": "LHR",
+      "name": "Heathrow",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London"
+    }
+  ],
+  "flights": [
+    {
+      "id": "F100",
+      "origin": "JFK",
+      "destination": "LAX",
+      "departureLocal": "2026-02-10T08:00",
+      "arrivalLocal": "2026-02-10T11:10",
+      "price": 320,
+      "currency": "USD"
+    },
+    {
+      "id": "F101",
+      "origin": "JFK",
+      "destination": "ORD",
+      "departureLocal": "2026-02-10T07:30",
+      "arrivalLocal": "2026-02-10T09:05",
+      "price": "120",
+      "currency": "USD"
+    },
+    {
+      "id": "F102",
+      "origin": "ORD",
+      "destination": "LAX",
+      "departureLocal": "2026-02-10T10:10",
+      "arrivalLocal": "2026-02-10T12:30",
+      "price": 190,
+      "currency": "USD"
+    },
+    {
+      "id": "F103",
+      "origin": "ORD",
+      "destination": "LAX",
+      "departureLocal": "2026-02-10T15:30",
+      "arrivalLocal": "2026-02-10T17:55",
+      "price": 150,
+      "currency": "USD"
+    },
+    {
+      "id": "F104",
+      "origin": "JFK",
+      "destination": "DFW",
+      "departureLocal": "2026-02-10T09:00",
+      "arrivalLocal": "2026-02-10T11:35",
+      "price": 140,
+      "currency": "USD"
+    },
+    {
+      "id": "F105",
+      "origin": "DFW",
+      "destination": "LAX",
+      "departureLocal": "2026-02-10T12:35",
+      "arrivalLocal": "2026-02-10T13:55",
+      "price": 175,
+      "currency": "USD"
+    },
+    {
+      "id": "F106",
+      "origin": "DFW",
+      "destination": "SFO",
+      "departureLocal": "2026-02-10T13:20",
+      "arrivalLocal": "2026-02-10T14:55",
+      "price": 165,
+      "currency": "USD"
+    },
+    {
+      "id": "F107",
+      "origin": "SFO",
+      "destination": "LAX",
+      "departureLocal": "2026-02-10T16:10",
+      "arrivalLocal": "2026-02-10T17:35",
+      "price": 85,
+      "currency": "USD"
+    },
+    {
+      "id": "F108",
+      "origin": "JFK",
+      "destination": "YYZ",
+      "departureLocal": "2026-02-10T10:00",
+      "arrivalLocal": "2026-02-10T11:35",
+      "price": 110,
+      "currency": "USD"
+    },
+    {
+      "id": "F109",
+      "origin": "YYZ",
+      "destination": "LAX",
+      "departureLocal": "2026-02-10T13:20",
+      "arrivalLocal": "2026-02-10T15:50",
+      "price": 260,
+      "currency": "USD"
+    },
+    {
+      "id": "F110",
+      "origin": "JFK",
+      "destination": "LGA",
+      "departureLocal": "2026-02-10T09:05",
+      "arrivalLocal": "2026-02-10T09:35",
+      "price": 50,
+      "currency": "USD"
+    },
+    {
+      "id": "F111",
+      "origin": "LGA",
+      "destination": "LAX",
+      "departureLocal": "2026-02-10T10:40",
+      "arrivalLocal": "2026-02-10T14:05",
+      "price": 280,
+      "currency": "USD"
+    },
+    {
+      "id": "F200",
+      "origin": "JFK",
+      "destination": "ORD",
+      "departureLocal": "2026-02-10T21:00",
+      "arrivalLocal": "2026-02-10T22:30",
+      "price": 95,
+      "currency": "USD"
+    },
+    {
+      "id": "F201",
+      "origin": "ORD",
+      "destination": "DFW",
+      "departureLocal": "2026-02-10T23:40",
+      "arrivalLocal": "2026-02-11T02:05",
+      "price": 90,
+      "currency": "USD"
+    },
+    {
+      "id": "F202",
+      "origin": "DFW",
+      "destination": "LAX",
+      "departureLocal": "2026-02-11T03:10",
+      "arrivalLocal": "2026-02-11T04:30",
+      "price": 110,
+      "currency": "USD"
+    },
+    {
+      "id": "BAD1",
+      "origin": "JKF",
+      "destination": "LAX",
+      "departureLocal": "2026-02-10T08:00",
+      "arrivalLocal": "2026-02-10T11:10",
+      "price": 320,
+      "currency": "USD"
+    },
+    {
+      "id": "BAD2",
+      "origin": "JFK",
+      "destination": "LAX",
+      "departureLocal": "oops",
+      "arrivalLocal": "2026-02-10T11:10",
+      "price": 320,
+      "currency": "USD"
+    },
+    {
+      "id": "BAD3",
+      "origin": "JFK",
+      "destination": "LAX",
+      "departureLocal": "2026-02-10T08:00",
+      "arrivalLocal": "2026-02-10T07:10",
+      "price": 320,
+      "currency": "USD"
+    },
+    {
+      "id": "BAD4",
+      "origin": "JFK",
+      "destination": "LAX",
+      "departureLocal": "2026-02-10T08:00",
+      "arrivalLocal": "2026-02-10T11:10",
+      "price": "USD ???",
+      "currency": "USD"
+    }
+  ]
+}
